@@ -47,7 +47,7 @@ fun sqr(x:Int): Int {
 
 
 fun isPalindrome(n: Int): Boolean{
-    var result = 0
+    var result = 1
     var x = n
     var counter = 0
     if (x > 10){
