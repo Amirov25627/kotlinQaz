@@ -8,10 +8,10 @@ fun main() {
 //revert(12345)
 //println(isPrime(11))
 //println(isCoPrime(25, 49))
-//println(isPalindrome(33133))
+println(isPalindrome(13341))
 //squares()
 //buildSumExample()
-average()
+//average()
 }
 
 fun average(){
@@ -66,7 +66,9 @@ fun isPalindrome(n: Int): Boolean{
                 a = x / pow(10.toDouble(), counter-2.toDouble()) % 10
                 b = x.toDouble() % (10.toDouble() * y.toDouble()) / y
                 counter--
-                if (a.toInt() == b.toInt()) {result++} else result *= 0
+                println ("a= ${a.toInt()} b= ${b.toInt()}")
+                if (a.toInt() == b.toInt()) {result *= 1} else result *= 0
+                println("result = $result")
             }
         } else return false
 
